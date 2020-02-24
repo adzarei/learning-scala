@@ -1,6 +1,6 @@
 package org.adzarei.learningscala.classes
 
-import ChecksumAccumulator.{calculate_functional, calculate_imperative}
+import org.adzarei.learningscala.classes.ChecksumAccumulator.{calculate_functional, calculate_imperative}
 
 object Summer {
 
