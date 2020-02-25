@@ -6,5 +6,15 @@ package org.adzarei.learningscala.functionalobjects
 //   - d represents the 'denominator'
 class Rational(n: Int, d: Int) {
   // Scala compiler will add any code inside these curly brackets to the constructor.
-  println("Created " + n + "/" + d)
+  require(d != 0, "Numerator can't be 0.")
+
+  val num: Int = n
+  val denom: Int = d
+
+  override def toString: String = n + "/" + d
+
+  def add (that: Rational): Rational = {
+    new Rational((this.n * that.denom) + (that.num * this.d), this.d * that.denom)
+  }
+
 }
