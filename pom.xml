@@ -74,13 +74,18 @@
                 <version>2.15.2</version>
                 <executions>
                     <execution>
-                        <id>scala-compile</id>
                         <goals>
                             <goal>compile</goal>
                             <goal>testCompile</goal>
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                    <args>
+                        <arg>-target:jvm-1.8</arg>
+                    </args>
+                </configuration>
             </plugin>
 
         </plugins>

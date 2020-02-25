@@ -14,7 +14,7 @@ class RationalTest extends AnyFunSuite {
     assert(rational.denom == 2)
   }
 
-  test("Rational Object should have normalised fraction") {
+  test("Rational Object should normalised fraction") {
     val rational = new Rational(2,4)
     assert(rational.numer == 1 && rational.denom == 2)
   }
